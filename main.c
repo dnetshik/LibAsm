@@ -11,6 +11,8 @@ char *ft_strcat(char * s1,char *s2);
 size_t ft_strlen(const char *s);
 void *ft_memcpy(void *restrict dst1, const void *restrict src1, size_t n);
 void *ft_memset(void *b, int c, size_t len);
+void ft_bzero(void *s, size_t n);
+char *ft_strdup(const char *s1);
 
 int	main(void)
 {
@@ -46,5 +48,21 @@ int	main(void)
    	ft_memset(str,'$',7);
   	puts(str);
 
+	//for bzero
+	char str_bz[50];
+	strcpy(str_bz,"Donald");
+	puts(str_bz);
+	ft_bzero(str_bz,2);
+	puts(str_bz);
+	printf("work: %c\n",str_bz[1]);
+	
+	//for strdup
+	char *p1 = "Raja";
+    char *p2;
+    p2 = ft_strdup(p1);
+ 
+    printf("Duplicated string is : %s", p2);
+
 	return (0);
 }
+
