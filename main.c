@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include <fcntl.h>
+#include <unistd.h>
 int ft_toupper();
 int ft_tolower();
 int	ft_isascii();
@@ -13,6 +15,7 @@ void *ft_memcpy(void *restrict dst1, const void *restrict src1, size_t n);
 void *ft_memset(void *b, int c, size_t len);
 void ft_bzero(void *s, size_t n);
 char *ft_strdup(const char *s1);
+int	ft_puts(const char *s);
 
 int	main(void)
 {
@@ -60,9 +63,10 @@ int	main(void)
 	char *p1 = "Raja";
     char *p2;
     p2 = ft_strdup(p1);
- 
-    printf("Duplicated string is : %s", p2);
+    printf("Duplicated string is : %s\n", p2);
 
+	//for puts
+   	ft_puts(NULL);
 	return (0);
 }
 

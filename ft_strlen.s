@@ -6,7 +6,7 @@ _ft_strlen:
   mov   rbx, rdi
   xor   al, al
   mov   rcx, 0xffffffff
-  repne scasb  ;SCASB (scan byte string)
+  repne scasb 
   sub   rdi, rbx
   mov   rax, rdi
   pop   rcx
