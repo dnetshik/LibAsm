@@ -1,8 +1,6 @@
-#include <stdio.h>
-#include <string.h>
-#include <fcntl.h>
-#include <unistd.h>
-int ft_toupper();
+#include "libasm.h"
+
+/*int ft_toupper();
 int ft_tolower();
 int	ft_isascii();
 int ft_isprint();
@@ -16,6 +14,7 @@ void *ft_memset(void *b, int c, size_t len);
 void ft_bzero(void *s, size_t n);
 char *ft_strdup(const char *s1);
 int	ft_puts(const char *s);
+void ft_cat(int fd);*/
 
 int	main(void)
 {
@@ -67,6 +66,10 @@ int	main(void)
 
 	//for puts
    	ft_puts(NULL);
+	//ft_cat(0);
+	printf("Is upper: %c %d\n",'a',ft_isupper('a'));
+	printf("Is lower: %c %d\n",'z',ft_islower('z'));
+
 	return (0);
 }
 

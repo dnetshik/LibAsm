@@ -2,7 +2,8 @@ NAME = libfts.a
 AS = nasm
 ASFLAGS = -f macho64
 SRC = ft_toupper.s ft_tolower.s ft_isascii.s ft_isdigit.s ft_isprint.s ft_isalpha.s ft_isalnum.s \
-	  ft_strlen.s ft_strcat.s ft_strdup.s ft_bzero.s ft_memcpy.s ft_memset.s ft_puts.s
+	  ft_strlen.s ft_strcat.s ft_strdup.s ft_bzero.s ft_memcpy.s ft_memset.s ft_puts.s ft_cat.s \
+	  ft_isupper.s ft_islower.s
 OBJECT = $(SRC:.s=.o)
 
 all: $(NAME)
